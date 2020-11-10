@@ -1,0 +1,35 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:CountryFlags">
+
+
+    <ControlTemplate x:Key="CountryFlags.Templates.CountryFlag" TargetType="{x:Type local:FlagIcon}">
+        <Border
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}">
+            <Image x:Name="PART_DISPLAY_COUNTRY_FLAG" Source="{Binding FlagImage, RelativeSource={RelativeSource TemplatedParent}}" />
+        </Border>
+    </ControlTemplate>
+
+
+    <Style x:Key="CountryFlags.Styles.CountryFlag" TargetType="{x:Type local:FlagIcon}">
+
+        <Setter Property="BorderThickness" Value="0.5" />
+        <Setter Property="BorderBrush" Value="#FF292929" />
+        <Setter Property="Height" Value="120" />
+        <Setter Property="Width" Value="204" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="FlowDirection" Value="LeftToRight" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="UseLayoutRounding" Value="False" />
+        <Setter Property="Template" Value="{StaticResource CountryFlags.Templates.CountryFlag}" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    </Style>
+    
+    
+</ResourceDictionary>

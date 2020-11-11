@@ -4,20 +4,23 @@
 
 
     <ControlTemplate x:Key="CountryFlags.Templates.CountryFlag" TargetType="{x:Type local:FlagIcon}">
-        <Border
+        <Border CornerRadius="15"
                 BorderBrush="{TemplateBinding BorderBrush}"
                 BorderThickness="{TemplateBinding BorderThickness}">
-            <Image x:Name="PART_DISPLAY_COUNTRY_FLAG" Source="{Binding FlagImage, RelativeSource={RelativeSource TemplatedParent}}" />
+            <!--<Border.Background>
+                <ImageBrush x:Name="PART_DISPLAY_COUNTRY_FLAG" ImageSource="{Binding FlagImage, RelativeSource={RelativeSource TemplatedParent}}" />
+            </Border.Background>-->
+           <Image x:Name="PART_DISPLAY_COUNTRY_FLAG" Source="{Binding FlagImage, RelativeSource={RelativeSource TemplatedParent}}" />
         </Border>
     </ControlTemplate>
 
 
     <Style x:Key="CountryFlags.Styles.CountryFlag" TargetType="{x:Type local:FlagIcon}">
 
-        <Setter Property="BorderThickness" Value="0.5" />
+        <Setter Property="BorderThickness" Value="0.0" />
         <Setter Property="BorderBrush" Value="#FF292929" />
-        <Setter Property="Height" Value="120" />
-        <Setter Property="Width" Value="204" />
+        <Setter Property="Height" Value="30" />
+        <Setter Property="Width" Value="51" />
         <Setter Property="Padding" Value="0" />
         <Setter Property="Margin" Value="5" />
         <Setter Property="FlowDirection" Value="LeftToRight" />

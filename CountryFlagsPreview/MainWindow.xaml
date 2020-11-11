@@ -5,16 +5,244 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CountryFlagsPreview" 
         xmlns:cf="clr-namespace:CountryFlags;assembly=CountryFlags"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <WrapPanel>
-            <cf:FlagIcon Country="Afghanistan"  />
-            <cf:FlagIcon Country="Albania" />
-            <cf:FlagIcon Country="Andorra" />
-            <cf:FlagIcon Country="Antigua" />
-            <cf:FlagIcon Country="Algeria" />
-        </WrapPanel>
-
+        Foreground="WhiteSmoke"
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip"
+        Height="450" Width="820" WindowStyle="None" BorderThickness="1" Background="#FF4E4E4E" BorderBrush="#FF008EFF">
+    <Grid x:Name="root_grid" Visibility="Visible">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid x:Name="window_header_grid" Grid.Row="0" MouseEnter="window_header_grid_MouseEnter" MouseLeave="window_header_grid_MouseLeave" MouseDown="window_header_grid_MouseDown">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="32" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="120"/>
+            </Grid.ColumnDefinitions>
+            <Border x:Name="window_icon_panel" VerticalAlignment="Top" HorizontalAlignment="Left">
+                 <fa:ImageAwesome Icon="Flag"  Width="20" Foreground="{StaticResource LightControlBG}" Margin="8,6,4,4" />
+            </Border>
+            <TextBlock Grid.Column="1" x:Name="txt_window_title" Style="{StaticResource h1}" Margin="5,-4,0,0" Text="{StaticResource AppTitle}" VerticalAlignment="Top"  />
+            <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+               
+                    <fa:ImageAwesome x:Name="WindowCloseIcon" Icon="WindowClose" 
+                                     VerticalAlignment="Top" HorizontalAlignment="Right" 
+                                     Foreground="{StaticResource LightControlBG}" 
+                                     Margin="4,2,6,4"  
+                                     Width="20"
+                                     MouseDown="WindowCloseIcon_MouseDown" />
+               
+            </StackPanel>
+        </Grid>
+    <Grid  Margin="2,0,0,20" Grid.Row="1" >
+        <ScrollViewer>
+            
+            <WrapPanel HorizontalAlignment="Center">
+                <WrapPanel.Effect>
+                    <DropShadowEffect BlurRadius="3" ShadowDepth="1"/>
+                </WrapPanel.Effect>
+                <cf:FlagIcon Country="Afghanistan"  />
+                <cf:FlagIcon Country="Albania"  />
+                <cf:FlagIcon Country="Algeria"  />
+                <cf:FlagIcon Country="Andorra"  />
+                <cf:FlagIcon Country="Angola"  />
+                <cf:FlagIcon Country="Antigua"  />
+                <cf:FlagIcon Country="Argentina"  />
+                <cf:FlagIcon Country="Armenia"  />
+                <cf:FlagIcon Country="Australia"  />
+                <cf:FlagIcon Country="Austria"  />
+                <cf:FlagIcon Country="Azerbaijan"  />
+                <cf:FlagIcon Country="Bahamas"  />
+                <cf:FlagIcon Country="Bahrain"  />
+                <cf:FlagIcon Country="Bangladesh"  />
+                <cf:FlagIcon Country="Barbados"  />
+                <cf:FlagIcon Country="Belarus"  />
+                <cf:FlagIcon Country="Belgium"  />
+                <cf:FlagIcon Country="Belize"  />
+                <cf:FlagIcon Country="Benin"  />
+                <cf:FlagIcon Country="Bhutan"  />
+                <cf:FlagIcon Country="Bolivia"  />
+                <cf:FlagIcon Country="Bosnia_Herzegovina"  />
+                <cf:FlagIcon Country="Botswana"  />
+                <cf:FlagIcon Country="Brazil"  />
+                <cf:FlagIcon Country="Brunei"  />
+                <cf:FlagIcon Country="Bulgaria"  />
+                <cf:FlagIcon Country="Burkina_Faso"  />
+                <cf:FlagIcon Country="Burundi"  />
+                <cf:FlagIcon Country="Cabo_Verde"  />
+                <cf:FlagIcon Country="Cambodia"  />
+                <cf:FlagIcon Country="Cameroon"  />
+                <cf:FlagIcon Country="Canada"  />
+                <cf:FlagIcon Country="Central_African_Republic"  />
+                <cf:FlagIcon Country="Chad"  />
+                <cf:FlagIcon Country="Chile"  />
+                <cf:FlagIcon Country="China"  />
+                <cf:FlagIcon Country="Colombia"  />
+                <cf:FlagIcon Country="Comoros"  />
+                <cf:FlagIcon Country="Congo_Democratic_Republic_of"  />
+                <cf:FlagIcon Country="Congo"  />
+                <cf:FlagIcon Country="Costa_Rica"  />
+                <cf:FlagIcon Country="Cote_d_Ivoire"  />
+                <cf:FlagIcon Country="Croatia"  />
+                <cf:FlagIcon Country="Cuba"  />
+                <cf:FlagIcon Country="Cyprus"  />
+                <cf:FlagIcon Country="Czech_Republic"  />
+                <cf:FlagIcon Country="Denmark"  />
+                <cf:FlagIcon Country="Djibouti"  />
+                <cf:FlagIcon Country="Dominica"  />
+                <cf:FlagIcon Country="Dominican_Republic"  />
+                <cf:FlagIcon Country="Ecuador"  />
+                <cf:FlagIcon Country="Egypt"  />
+                <cf:FlagIcon Country="El_Salvador"  />
+                <cf:FlagIcon Country="Equatorial_Guinea"  />
+                <cf:FlagIcon Country="Eritrea"  />
+                <cf:FlagIcon Country="Estonia"  />
+                <cf:FlagIcon Country="Eswatini"  />
+                <cf:FlagIcon Country="Ethiopia"  />
+                <cf:FlagIcon Country="Fiji"  />
+                <cf:FlagIcon Country="Finland"  />
+                <cf:FlagIcon Country="France"  />
+                <cf:FlagIcon Country="Gabon"  />
+                <cf:FlagIcon Country="Gambia"  />
+                <cf:FlagIcon Country="Georgia"  />
+                <cf:FlagIcon Country="Germany"  />
+                <cf:FlagIcon Country="Ghana"  />
+                <cf:FlagIcon Country="Greece"  />
+                <cf:FlagIcon Country="Grenada"  />
+                <cf:FlagIcon Country="Guatemala"  />
+                <cf:FlagIcon Country="Guinea_Bissau"  />
+                <cf:FlagIcon Country="Guinea"  />
+                <cf:FlagIcon Country="Guyana"  />
+                <cf:FlagIcon Country="Haiti"  />
+                <cf:FlagIcon Country="Honduras"  />
+                <cf:FlagIcon Country="Hungary"  />
+                <cf:FlagIcon Country="Iceland"  />
+                <cf:FlagIcon Country="India"  />
+                <cf:FlagIcon Country="Indonesia"  />
+                <cf:FlagIcon Country="Iran"  />
+                <cf:FlagIcon Country="Iraq"  />
+                <cf:FlagIcon Country="Ireland"  />
+                <cf:FlagIcon Country="Israel"  />
+                <cf:FlagIcon Country="Italy"  />
+                <cf:FlagIcon Country="Jamaica"  />
+                <cf:FlagIcon Country="Japan"  />
+                <cf:FlagIcon Country="Jordan"  />
+                <cf:FlagIcon Country="Kazakhstan"  />
+                <cf:FlagIcon Country="Kenya"  />
+                <cf:FlagIcon Country="Kiribati"  />
+                <cf:FlagIcon Country="Korea_North"  />
+                <cf:FlagIcon Country="Korea_South"  />
+                <cf:FlagIcon Country="Kosovo"  />
+                <cf:FlagIcon Country="Kuwait"  />
+                <cf:FlagIcon Country="Kyrgyzstan"  />
+                <cf:FlagIcon Country="Laos"  />
+                <cf:FlagIcon Country="Latvia"  />
+                <cf:FlagIcon Country="Lebanon"  />
+                <cf:FlagIcon Country="Lesotho"  />
+                <cf:FlagIcon Country="Liberia"  />
+                <cf:FlagIcon Country="Libya"  />
+                <cf:FlagIcon Country="Liechtenstein"  />
+                <cf:FlagIcon Country="Lithuania"  />
+                <cf:FlagIcon Country="Luxembourg"  />
+                <cf:FlagIcon Country="Madagascar"  />
+                <cf:FlagIcon Country="Malawi"  />
+                <cf:FlagIcon Country="Malaysia"  />
+                <cf:FlagIcon Country="Maldives"  />
+                <cf:FlagIcon Country="Mali"  />
+                <cf:FlagIcon Country="Malta"  />
+                <cf:FlagIcon Country="Marshall_Islands"  />
+                <cf:FlagIcon Country="Mauritania"  />
+                <cf:FlagIcon Country="Mauritius"  />
+                <cf:FlagIcon Country="Mexico"  />
+                <cf:FlagIcon Country="Micronesia"  />
+                <cf:FlagIcon Country="Moldova"  />
+                <cf:FlagIcon Country="Monaco"  />
+                <cf:FlagIcon Country="Mongolia"  />
+                <cf:FlagIcon Country="Montenegro"  />
+                <cf:FlagIcon Country="Morocco"  />
+                <cf:FlagIcon Country="Mozambique"  />
+                <cf:FlagIcon Country="Myanmar"  />
+                <cf:FlagIcon Country="Namibia"  />
+                <cf:FlagIcon Country="Nauru"  />
+                <cf:FlagIcon Country="Nepal"  />
+                <cf:FlagIcon Country="Netherlands"  />
+                <cf:FlagIcon Country="New_Zealand"  />
+                <cf:FlagIcon Country="Nicaragua"  />
+                <cf:FlagIcon Country="Niger"  />
+                <cf:FlagIcon Country="Nigeria"  />
+                <cf:FlagIcon Country="North_Macedonia"  />
+                <cf:FlagIcon Country="Norway"  />
+                <cf:FlagIcon Country="Oman"  />
+                <cf:FlagIcon Country="Pakistan"  />
+                <cf:FlagIcon Country="Palau"  />
+                <cf:FlagIcon Country="Palestine"  />
+                <cf:FlagIcon Country="Panama"  />
+                <cf:FlagIcon Country="Papua_New_Guinea"  />
+                <cf:FlagIcon Country="Paraguay"  />
+                <cf:FlagIcon Country="Peru"  />
+                <cf:FlagIcon Country="Philippines"  />
+                <cf:FlagIcon Country="Poland"  />
+                <cf:FlagIcon Country="Portugal"  />
+                <cf:FlagIcon Country="Qatar"  />
+                <cf:FlagIcon Country="Romania"  />
+                <cf:FlagIcon Country="Russia"  />
+                <cf:FlagIcon Country="Rwanda"  />
+                <cf:FlagIcon Country="Samoa"  />
+                <cf:FlagIcon Country="San_Marino"  />
+                <cf:FlagIcon Country="Sao_Tome_and_Principe"  />
+                <cf:FlagIcon Country="Saudi_Arabia"  />
+                <cf:FlagIcon Country="Senegal"  />
+                <cf:FlagIcon Country="Serbia"  />
+                <cf:FlagIcon Country="Seychelles"  />
+                <cf:FlagIcon Country="Sierra_Leone"  />
+                <cf:FlagIcon Country="Singapore"  />
+                <cf:FlagIcon Country="Slovakia"  />
+                <cf:FlagIcon Country="Slovenia"  />
+                <cf:FlagIcon Country="Solomon_Islands"  />
+                <cf:FlagIcon Country="Somalia"  />
+                <cf:FlagIcon Country="South_Africa"  />
+                <cf:FlagIcon Country="South_Sudan"  />
+                <cf:FlagIcon Country="Spain"  />
+                <cf:FlagIcon Country="Sri_Lanka"  />
+                <cf:FlagIcon Country="St_Kitts_Nevis"  />
+                <cf:FlagIcon Country="St_Lucia"  />
+                <cf:FlagIcon Country="St_Vincent_the_Grenadines"  />
+                <cf:FlagIcon Country="Sudan"  />
+                <cf:FlagIcon Country="Suriname"  />
+                <cf:FlagIcon Country="Sweden"  />
+                <cf:FlagIcon Country="Switzerland"  />
+                <cf:FlagIcon Country="Syria"  />
+                <cf:FlagIcon Country="Taiwan"  />
+                <cf:FlagIcon Country="Tajikistan"  />
+                <cf:FlagIcon Country="Tanzania"  />
+                <cf:FlagIcon Country="Thailand"  />
+                <cf:FlagIcon Country="Timor_Leste"  />
+                <cf:FlagIcon Country="Togo"  />
+                <cf:FlagIcon Country="Tonga"  />
+                <cf:FlagIcon Country="Trinidad_and_Tobago"  />
+                <cf:FlagIcon Country="Tunisia"  />
+                <cf:FlagIcon Country="Turkey"  />
+                <cf:FlagIcon Country="Turkmenistan"  />
+                <cf:FlagIcon Country="Tuvalu"  />
+                <cf:FlagIcon Country="Uganda"  />
+                <cf:FlagIcon Country="Ukraine"  />
+                <cf:FlagIcon Country="United_Arab_Emirates"  />
+                <cf:FlagIcon Country="United_Kingdom"  />
+                <cf:FlagIcon Country="United_States_of_America"  />
+                <cf:FlagIcon Country="Uruguay"  />
+                <cf:FlagIcon Country="Uzbekistan"  />
+                <cf:FlagIcon Country="Vanuatu"  />
+                <cf:FlagIcon Country="Vatican_City"  />
+                <cf:FlagIcon Country="Venezuela"  />
+                <cf:FlagIcon Country="Vietnam"  />
+                <cf:FlagIcon Country="Yemen"  />
+                <cf:FlagIcon Country="Zambia"  />
+                <cf:FlagIcon Country="Zimbabwe"  />
+            </WrapPanel>
+        </ScrollViewer>
+    </Grid>
     </Grid>
 </Window>

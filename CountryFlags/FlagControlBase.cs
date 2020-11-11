@@ -25,21 +25,31 @@ namespace CountryFlags
         protected virtual DrawingGroup GetDrawingGroup(object country, string path)
         {
             var baseUri = $"pack://application:,,,/CountryFlags;component/img/{path}";
+            var imgUri = new Uri(baseUri, UriKind.Absolute);
 
-            var bitmap = new BitmapImage(new Uri(baseUri, UriKind.Absolute));
+            var bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = imgUri;
+            bitmap.DecodePixelWidth = 300;
             bitmap.CacheOption = BitmapCacheOption.OnLoad;
+            bitmap.EndInit();
             bitmap.Freeze();
 
-            BmpBitmapDecoder decoder2 = new BmpBitmapDecoder(baseUri, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
-            BitmapSource bitmapSource2 = decoder2.Frames[0];
+            var decoder = new PngBitmapDecoder(imgUri, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
+            BitmapSource bitmapSource = decoder.Frames[0];
+            var img = new Image();
+            img.BeginInit();
+            img.Source = bitmapSource;
 
-            var w = bitmap.Width;
-            var h = bitmap.Height;
+
+
+            var w = bitmap.PixelWidth;
+            var h = bitmap.PixelHeight;
 
             var ImageDrawing = new ImageDrawing
             {
                 Rect = new Rect(0, 0, w, h),
-                ImageSource = bitmap
+                ImageSource = bitmapSource
             };
 
             var drawingGroup = new DrawingGroup

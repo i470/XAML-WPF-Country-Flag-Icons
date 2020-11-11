@@ -11,7 +11,8 @@ namespace CountryFlags
     [TemplatePart(Name = "PART_DISPLAY_COUNTRY_FLAG", Type = typeof(Image))]
     public class FlagIcon : FlagControlBase
     {
-        
+        private const string FlagImagePartName = "PART_DISPLAY_COUNTRY_FLAG";
+
         public FlagIcon()
         {
            
@@ -23,7 +24,7 @@ namespace CountryFlags
             DefaultStyleKeyProperty.OverrideMetadata(typeof(FlagIcon), new FrameworkPropertyMetadata(typeof(FlagIcon)));
         }
 
-        private const string FlagImagePartName = "PART_DISPLAY_COUNTRY_FLAG";
+        
 
         private Image _flagImage;
         public Image FlagImage
@@ -83,6 +84,60 @@ namespace CountryFlags
             {
                 this.Data = null;
             }
+        }
+
+
+        protected virtual DrawingGroup GetDrawingGroup(object country, string path)
+        {
+            var baseUri = $"pack://application:,,,/CountryFlags;component/img/{path}";
+            var imgUri = new Uri(baseUri, UriKind.Absolute);
+
+            var bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = imgUri;
+            bitmap.DecodePixelWidth = 100;
+            bitmap.CacheOption = BitmapCacheOption.OnLoad;
+            bitmap.EndInit();
+            bitmap.Freeze();
+
+            //var decoder = new PngBitmapDecoder(imgUri, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
+            //BitmapSource bitmapSource = decoder.Frames[0];
+            //var img = new Image();
+            //img.BeginInit();
+            //img.Source = bitmapSource;
+
+
+
+            var w = bitmap.PixelWidth;
+            var h = bitmap.PixelHeight;
+
+            var ImageDrawing = new ImageDrawing
+            {
+                Rect = new Rect(0, 0, w, h),
+                ImageSource = bitmap
+            };
+
+            var drawingGroup = new DrawingGroup
+            {
+                Children = { ImageDrawing },
+
+            };
+
+            return drawingGroup;
+        }
+
+        protected ImageSource CreateImageSource(Enum country)
+        {
+
+            if (string.IsNullOrEmpty(Data))
+            {
+                return null;
+            }
+
+            var drawingImage = new DrawingImage(GetDrawingGroup(country, Data));
+            drawingImage.Freeze();
+
+            return drawingImage;
         }
 
     }

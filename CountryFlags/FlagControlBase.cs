@@ -10,6 +10,7 @@ namespace CountryFlags
     
     public abstract class FlagControlBase : FlagBase
     {
+
      
         protected static readonly DependencyProperty DataProperty
          = DependencyProperty.Register(nameof(Data), typeof(string), typeof(FlagIcon), new PropertyMetadata(""));

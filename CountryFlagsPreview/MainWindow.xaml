@@ -7,10 +7,15 @@
         xmlns:cf="clr-namespace:CountryFlags;assembly=CountryFlags"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
-        Foreground="WhiteSmoke"
-        AllowsTransparency="True"
-        ResizeMode="CanResizeWithGrip"
-        Height="450" Width="820" WindowStyle="None" BorderThickness="1" Background="#FF4E4E4E" BorderBrush="#FF008EFF">
+        Style="{StaticResource WindowStyle}"
+        Height="450" Width="820" 
+        Title="{StaticResource AppTitle}"
+        Icon="/flag-of-United-States-of-America.ico" >
+    <WindowChrome.WindowChrome>
+        <WindowChrome 
+            CaptionHeight="0"
+        ResizeBorderThickness="5" />
+    </WindowChrome.WindowChrome>
     <Grid x:Name="root_grid" Visibility="Visible">
         <Grid.RowDefinitions>
             <RowDefinition Height="32" />
@@ -25,10 +30,10 @@
             <Border x:Name="window_icon_panel" VerticalAlignment="Top" HorizontalAlignment="Left">
                  <fa:ImageAwesome Icon="Flag"  Width="20" Foreground="{StaticResource LightControlBG}" Margin="8,6,4,4" />
             </Border>
-            <TextBlock Grid.Column="1" x:Name="txt_window_title" Style="{StaticResource h1}" Margin="5,-4,0,0" Text="{StaticResource AppTitle}" VerticalAlignment="Top"  />
+            <TextBlock Grid.Column="1" x:Name="txt_window_title" Style="{StaticResource h1}" Margin="5,0,0,0" Text="{StaticResource AppTitle}" VerticalAlignment="Top"  />
             <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
                
-                    <fa:ImageAwesome x:Name="WindowCloseIcon" Icon="WindowClose" 
+                    <fa:ImageAwesome x:Name="WindowCloseIcon" Icon="WindowClose" MouseEnter="WindowCloseIcon_MouseEnter" MouseLeave="WindowCloseIcon_MouseLeave"
                                      VerticalAlignment="Top" HorizontalAlignment="Right" 
                                      Foreground="{StaticResource LightControlBG}" 
                                      Margin="4,2,6,4"  

@@ -7,11 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="flag-of-United-States-of-America.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CountryFlags\CountryFlags.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="flag-of-United-States-of-America.ico" />
   </ItemGroup>
 
 </Project>

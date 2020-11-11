@@ -37,8 +37,9 @@
             <Setter Property="Foreground" Value="WhiteSmoke" />
             <Setter Property="FontSize" Value="14" />
             <Setter Property="FontFamily" Value="Tunga" />
-            
-        </Style>
+            <Setter Property="ResizeMode" Value="CanResize" />
+            <Setter Property="WindowStyle" Value="None" />
+         </Style>
 
         <!--SCROLL BAR -->
         <SolidColorBrush x:Key="DarkControlBG" Color="#FF1B1B20"  />

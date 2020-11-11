@@ -2,8 +2,10 @@
 Projects has 197 Country Flag Icons 
 
 WPF .NET Core 3.1
-Flag icons are generated from PNG Images size **204px x 120px**. 
-Country list populated in **CountryEnum.cs** and 
+Flag icons are generated from PNG Images size **204 x 120**,
+demo size **51x30**
+
+Country list populated in **CountryEnum.cs** 
 
 ![Image of WPF Flag Icons](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf_country_icons.PNG)
 

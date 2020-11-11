@@ -67,7 +67,7 @@ namespace CountryFlags
             if (Country != default(CountryEnum))
             {
                 string data = null;
-                CountryDataFactory.DataIndex.Value?.TryGetValue(Country, out data);
+                CountryDataFactory.CountryIndex.Value?.TryGetValue(Country, out data);
                 this.Data = data;
 
                

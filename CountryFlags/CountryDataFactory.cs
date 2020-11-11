@@ -6,13 +6,13 @@ namespace CountryFlags
 {
     public static class CountryDataFactory
     {
-        public static Lazy<IDictionary<Enum, string>> DataIndex { get; }
+        public static Lazy<IDictionary<Enum, string>> CountryIndex { get; }
 
         static CountryDataFactory()
         {
-            if (DataIndex == null)
+            if (CountryIndex == null)
             {
-                DataIndex = new Lazy<IDictionary<Enum, string>>(Create);
+                CountryIndex = new Lazy<IDictionary<Enum, string>>(Create);
             }
         }
 

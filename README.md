@@ -25,7 +25,7 @@ Sample usage is in **CountryFlagsPreview**
 <cf:FlagIcon Country="Andorra"  />
 <cf:FlagIcon Country="Angola"  />
 
-//to change size go control style located at CountryFlags\Themes\FlagIcon.xaml
+//to change icpn size go to FlagIcon control style located in the  CountryFlags\Themes\FlagIcon.xaml
 
 <Style x:Key="CountryFlags.Styles.CountryFlag" TargetType="{x:Type local:FlagIcon}">
         <Setter Property="Height" Value="30" />

@@ -13,11 +13,12 @@ WPF Flag icons and images located in **CountryFlags** Project.
 Sample usage is in **CountryFlagsPreview** 
 	
 ```xaml
-//add to namespace 
+<!-- add to namespace -->
+
 <Window x:Class="CountryFlagsPreview.MainWindow"
         xmlns:cf="clr-namespace:CountryFlags;assembly=CountryFlags" >
 
-//FlagIcon object with country predefined in the list renders the flag
+<!-- FlagIcon object with country predefined in the list renders the flag -->
 
 <cf:FlagIcon Country="Afghanistan"  />
 <cf:FlagIcon Country="Albania"  />
@@ -25,7 +26,7 @@ Sample usage is in **CountryFlagsPreview**
 <cf:FlagIcon Country="Andorra"  />
 <cf:FlagIcon Country="Angola"  />
 
-//to change icpn size go to FlagIcon control style located in the  CountryFlags\Themes\FlagIcon.xaml
+<!-- to change icpn size go to FlagIcon control style located in the  CountryFlags\Themes\FlagIcon.xaml -->
 
 <Style x:Key="CountryFlags.Styles.CountryFlag" TargetType="{x:Type local:FlagIcon}">
         <Setter Property="Height" Value="30" />

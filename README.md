@@ -1,4 +1,4 @@
-# WPF-Country-Flag-Icons
+# WPF Country Flag Icons
 WPF Country Flag Icons 
 
 WPF .NET Core 3.1

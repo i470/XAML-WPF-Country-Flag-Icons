@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryFlagsPreview", "CountryFlagsPreview\CountryFlagsPreview.csproj", "{89E4B2E8-9541-47E0-935E-6EACFE37F45A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryFlagsPreview", "CountryFlagsPreview\CountryFlagsPreview.csproj", "{89E4B2E8-9541-47E0-935E-6EACFE37F45A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryFlags", "CountryFlags\CountryFlags.csproj", "{3ABA9B07-46B7-4FFB-806D-8B41EBBA79EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryFlags", "CountryFlags\CountryFlags.csproj", "{3ABA9B07-46B7-4FFB-806D-8B41EBBA79EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryFlagsTest", "CountryFlagsTest\CountryFlagsTest.csproj", "{16A335E8-2100-4A48-BB83-942EAA4B61BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryFlagsTest", "CountryFlagsTest\CountryFlagsTest.csproj", "{16A335E8-2100-4A48-BB83-942EAA4B61BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CBC13A58-AE0F-42B4-B33A-64650219FFC3}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		..\..\..\Desktop\mYbLOG\wpf_country_icons.PNG = ..\..\..\Desktop\mYbLOG\wpf_country_icons.PNG
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

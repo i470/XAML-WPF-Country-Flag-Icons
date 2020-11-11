@@ -16,11 +16,11 @@
 
 
     <Style x:Key="CountryFlags.Styles.CountryFlag" TargetType="{x:Type local:FlagIcon}">
-
-        <Setter Property="BorderThickness" Value="0.0" />
-        <Setter Property="BorderBrush" Value="#FF292929" />
         <Setter Property="Height" Value="30" />
         <Setter Property="Width" Value="51" />
+        
+        <Setter Property="BorderThickness" Value="0.0" />
+        <Setter Property="BorderBrush" Value="#FF292929" />
         <Setter Property="Padding" Value="0" />
         <Setter Property="Margin" Value="5" />
         <Setter Property="FlowDirection" Value="LeftToRight" />

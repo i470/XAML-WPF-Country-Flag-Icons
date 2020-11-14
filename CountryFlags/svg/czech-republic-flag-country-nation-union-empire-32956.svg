@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="480" width="640" viewBox="0 0 640 480">
+  <defs>
+    <clipPath id="a">
+      <path fill-opacity=".67" d="M-74 0h682.67v512H-74z"/>
+    </clipPath>
+  </defs>
+  <g fill-rule="evenodd" clip-path="url(#a)" transform="translate(69.38) scale(.94)" stroke-width="1pt">
+    <path fill="#e80000" d="M-74 0h768v512H-74z"/>
+    <path fill="#fff" d="M-74 0h768v256H-74z"/>
+    <path d="M-74 0l382.73 255.67L-74 511.01V0z" fill="#00006f"/>
+  </g>
+
+	
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="Czech, Republic, Flag, Country, Nation, Union, Empire" dc:description="Czech, Republic, Flag, Country, Nation, Union, Empire" dc:publisher="Iconscout" dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Iconscout Store</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

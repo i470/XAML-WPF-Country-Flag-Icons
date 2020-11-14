@@ -7,6 +7,9 @@
 
   <ItemGroup>
     <PackageReference Include="Enums.NET" Version="3.0.3" />
+    <PackageReference Include="SkiaSharp" Version="2.80.2" />
+    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
+    <PackageReference Include="SkiaSharp.Views.WPF" Version="2.80.2" />
   </ItemGroup>
 
   <ItemGroup>

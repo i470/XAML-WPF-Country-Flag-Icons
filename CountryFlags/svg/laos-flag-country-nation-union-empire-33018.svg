@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="480" width="640" viewBox="0 0 640 480">
+  <defs>
+    <clipPath id="a">
+      <path fill-opacity=".67" d="M0 0h640v480H0z"/>
+    </clipPath>
+  </defs>
+  <g fill-rule="evenodd" clip-path="url(#a)">
+    <path fill="#e90012" d="M-40 0h720v480H-40z"/>
+    <path fill="#003dd2" d="M-40 119.26h720v241.48H-40z"/>
+    <path d="M423.42 239.998a103.419 103.419 0 1 1-206.838 0 103.419 103.419 0 1 1 206.837 0z" fill="#fff"/>
+  </g>
+
+	
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="Laos, Flag, Country, Nation, Union, Empire" dc:description="Laos, Flag, Country, Nation, Union, Empire" dc:publisher="Iconscout" dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Iconscout Store</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="480" width="640" viewBox="0 0 640 480">
+  <g fill-rule="evenodd" stroke-width="1pt">
+    <path fill="#d52b1e" d="M0 0h640v480H0z"/>
+    <g fill="#fff">
+      <path d="M170 194.997h299.996v89.997H170z"/>
+      <path d="M275 89.997h89.996v299.996H275z"/>
+    </g>
+  </g>
+
+	
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="Switzerland, Flag, Country, Nation, Union, Empire" dc:description="Switzerland, Flag, Country, Nation, Union, Empire" dc:publisher="Iconscout" dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Iconscout Store</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

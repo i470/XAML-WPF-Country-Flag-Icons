@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="480" width="640" viewBox="0 0 640 480">
+  <path fill="#d20000" d="M0 0h640v480H0z"/>
+  <path d="M0 0h96l224 231.43L544 0h96L0 480h96l224-231.43L544 480h96zm640 192v96L0 192v96zM280 0l40 205.714L360 0zm0 480l40-205.714L360 480z" fill="#ffe600"/>
+  <circle r="77.143" cy="240" cx="320" fill="#ffe600" stroke="#d20000" stroke-width="17.143"/>
+
+	
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="Former, Yugoslav, Republic, Of, Macedonia" dc:description="Former, Yugoslav, Republic, Of, Macedonia" dc:publisher="Iconscout" dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Iconscout Store</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

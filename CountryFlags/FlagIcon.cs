@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -17,11 +18,13 @@ namespace CountryFlags
         {
            
             this.DefaultStyleKey = typeof(FlagIcon);
+            Size = IconSize.s24;
         }
 
         static FlagIcon()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(FlagIcon), new FrameworkPropertyMetadata(typeof(FlagIcon)));
+           
         }
 
         
@@ -57,7 +60,8 @@ namespace CountryFlags
             set { SetValue(CountryProperty, value); }
         }
 
-       
+     
+
         protected internal override void SetCountry<TCountry>(TCountry country)
         {
             BindingOperations.SetBinding(this, CountryProperty, new Binding() { Source = country, Mode = BindingMode.OneTime });
@@ -76,7 +80,7 @@ namespace CountryFlags
                 if(FlagImage!=null)
                 {
                     FlagImage.Source = CreateImageSource(Country);
-                   
+                    FlagImage.Width = (Int16)Size;
                 }
               
             }
@@ -95,18 +99,10 @@ namespace CountryFlags
             var bitmap = new BitmapImage();
             bitmap.BeginInit();
             bitmap.UriSource = imgUri;
-            bitmap.DecodePixelWidth = 100;
+            bitmap.DecodePixelWidth = (Int16)Size;
             bitmap.CacheOption = BitmapCacheOption.OnLoad;
             bitmap.EndInit();
             bitmap.Freeze();
-
-            //var decoder = new PngBitmapDecoder(imgUri, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
-            //BitmapSource bitmapSource = decoder.Frames[0];
-            //var img = new Image();
-            //img.BeginInit();
-            //img.Source = bitmapSource;
-
-
 
             var w = bitmap.PixelWidth;
             var h = bitmap.PixelHeight;
@@ -140,5 +136,9 @@ namespace CountryFlags
             return drawingImage;
         }
 
+        protected internal override void SetSize<IconSize>(IconSize size)
+        {
+            BindingOperations.SetBinding(this, SizeProperty, new Binding() { Source = size, Mode = BindingMode.OneTime });
+        }
     }
 }

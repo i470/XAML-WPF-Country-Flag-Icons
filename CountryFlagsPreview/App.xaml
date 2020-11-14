@@ -5,7 +5,7 @@
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <system:String x:Key="AppTitle">WPF World Flag Icons</system:String>
+        <system:String x:Key="AppTitle">XAML WPF World Flag Icons</system:String>
         
 
         

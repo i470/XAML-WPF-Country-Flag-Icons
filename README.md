@@ -22,18 +22,16 @@ Sample usage is in **CountryFlagsPreview**
 
 <!-- FlagIcon object with country predefined in the list renders the flag -->
 
-<cf:FlagIcon Country="Afghanistan"  />
+<cf:FlagIcon Country="Afghanistan" Size="s32" />
 <cf:FlagIcon Country="Albania"  />
 <cf:FlagIcon Country="Algeria"  />
 <cf:FlagIcon Country="Andorra"  />
 <cf:FlagIcon Country="Angola"  />
 
-<!-- to change icon size go to FlagIcon control style located in the  CountryFlags\Themes\FlagIcon.xaml -->
-<!-- it is enough to change only width or height -->
+<!-- Default icon size is set to 16px , can be changed by setting property Size="s32" -->
 
-<Style x:Key="CountryFlags.Styles.CountryFlag" TargetType="{x:Type local:FlagIcon}">
-          <Setter Property="Width" Value="51" />
-   <!--<Setter Property="Height" Value="30" />-->
+<!-- Sizes : 16,24,32,64,128,256,512 -->
+
 ```
 
 - [ ] replace png images with svg

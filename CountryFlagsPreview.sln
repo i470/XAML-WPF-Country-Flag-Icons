@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CBC13A58-AE0F-42B4-B33A-64650219FFC3}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		..\..\..\Desktop\mYbLOG\wpf-xaml-world-country-flags-sizes.png = ..\..\..\Desktop\mYbLOG\wpf-xaml-world-country-flags-sizes.png
 		..\..\..\Desktop\mYbLOG\wpf_country_icons.PNG = ..\..\..\Desktop\mYbLOG\wpf_country_icons.PNG
 	EndProjectSection
 EndProject

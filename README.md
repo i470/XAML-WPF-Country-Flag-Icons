@@ -7,7 +7,7 @@ demo size **51x30**
 
 Country list populated in **CountryEnum.cs** 
 
-![Image of WPF Flag Icons](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf_country_icons.PNG)
+![Image of WPF XAML Flag Icons](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf_country_icons.PNG)
 
 ## USAGE
 WPF Flag icons and images located in **CountryFlags** Project.
@@ -30,8 +30,9 @@ Sample usage is in **CountryFlagsPreview**
 
 <!-- Default icon size is set to 16px , can be changed by setting property Size="s32" -->
 
-<!-- Sizes : 16,24,32,64,128,256,512 -->
+<!-- Sizes : s16,s24,s32,s64,s128,s256,s512 -->
 
+![Image of WPF XAML Flag Icons](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf-xaml-world-country-flags-sizes.png)
 ```
 
 - [ ] replace png images with svg

@@ -1,4 +1,4 @@
-# WPF XAML Country Flag Icons
+# WPF XAML Country Flag Icons 197 Flags
 Projects has 197 Country Flag Icons 
 
 WPF .NET Core 3.1
@@ -32,8 +32,8 @@ Sample usage is in **CountryFlagsPreview**
 
 <!-- Sizes : s16,s24,s32,s64,s128,s256,s512 -->
 
-![Image of WPF XAML Flag IconSizes](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf-xaml-world-country-flags-sizes.png)
 ```
+![Image of WPF XAML Flag Icons](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf-xaml-world-country-flags-sizes.png)
 
 - [ ] replace png images with svg
 - [ ] add rounded corner style

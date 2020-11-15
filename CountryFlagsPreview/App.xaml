@@ -32,8 +32,11 @@
                 <GradientStop Color="#FF72757A" Offset="0"/>
         </RadialGradientBrush>
 
+        <SolidColorBrush x:Key="WindowBGSolid" Color="#FF34343D"/>
+
+
         <Style TargetType="{x:Type Window}" x:Key="WindowStyle">
-            <Setter Property="Background" Value="{StaticResource WindowBG}" />
+            <Setter Property="Background" Value="{StaticResource WindowBGSolid}" />
             <Setter Property="Foreground" Value="WhiteSmoke" />
             <Setter Property="FontSize" Value="14" />
             <Setter Property="FontFamily" Value="Tunga" />
@@ -166,6 +169,5 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-        
     </Application.Resources>
 </Application>

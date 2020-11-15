@@ -4,23 +4,16 @@
 
 
     <ControlTemplate x:Key="CountryFlags.Templates.CountryFlag" TargetType="{x:Type local:FlagIcon}">
-        <Border CornerRadius="15"
-                BorderBrush="{TemplateBinding BorderBrush}"
+        <Border BorderBrush="{TemplateBinding BorderBrush}"
                 BorderThickness="{TemplateBinding BorderThickness}">
-            <!--<Border.Background>
-                <ImageBrush x:Name="PART_DISPLAY_COUNTRY_FLAG" ImageSource="{Binding FlagImage, RelativeSource={RelativeSource TemplatedParent}}" />
-            </Border.Background>-->
            <Image x:Name="PART_DISPLAY_COUNTRY_FLAG" Source="{Binding FlagImage, RelativeSource={RelativeSource TemplatedParent}}" />
         </Border>
     </ControlTemplate>
 
 
+    
     <Style x:Key="CountryFlags.Styles.CountryFlag" TargetType="{x:Type local:FlagIcon}">
-        <!--<Setter Property="Height" Value="30" />-->
-        <!--<Setter Property="Width" Value="51" />-->
-        
         <Setter Property="BorderThickness" Value="0.0" />
-        <Setter Property="BorderBrush" Value="#FF292929" />
         <Setter Property="Padding" Value="0" />
         <Setter Property="Margin" Value="5" />
         <Setter Property="FlowDirection" Value="LeftToRight" />
@@ -35,4 +28,96 @@
     </Style>
     
     
+    
+    <!-- ROUND ICON-->
+
+    <ControlTemplate x:Key="CountryFlags.Templates.CountryFlagCircle" TargetType="{x:Type local:FlagIconCircle}">
+        <Border x:Name="PART_ICON_PANEL">
+            <Path x:Name="PART_ICON_SHAPE" Stretch="Fill" Margin="1">
+                <Path.Fill>
+                    <ImageBrush x:Name="PART_COUNTRY_FLAG_IMAGE" ImageSource="{Binding FlagImage, RelativeSource={RelativeSource TemplatedParent}}" Stretch="UniformToFill" />
+                </Path.Fill>
+            </Path>
+        </Border>
+    </ControlTemplate>
+
+    <Style x:Key="CountryFlags.Styles.CountryFlagCircle" TargetType="{x:Type local:FlagIconCircle}">
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="Template" Value="{StaticResource CountryFlags.Templates.CountryFlagCircle}" />
+    </Style>
+
+    <!-- FANCY PIN ICON-->
+    <ControlTemplate x:Key="CountryFlags.Templates.CountryFlagFancyPin" TargetType="{x:Type local:FlagIconPin}">
+
+        <Viewbox x:Name="PART_ICON_PANEL" Stretch="Fill">
+            <Grid>
+                <Path Data="M20.913851,0 L8.0863408,0 C3.6275209,0 3.9443045E-31,2.9420888 3.9443045E-31,6.5575382 L3.9443045E-31,16.958769 C3.9443045E-31,19.722842 2.1233847,22.087509 5.1136982,23.05071 L14.49952,37.250001 23.886301,23.05071 C26.877575,22.087509 29,19.722842 29,16.958769 L29,6.5575382 C29.000096,2.9420888 25.373535,0 20.913851,0 z" Stretch="Fill" StrokeThickness="0.5" ClipToBounds="True">
+                    <!--<Path.Stroke>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#00000000" Offset="1"/>
+                            <GradientStop Color="White"/>
+                        </LinearGradientBrush>
+                    </Path.Stroke>-->
+                    <Path.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <!--<GradientStop Color="#FFD1D1D1"/>
+                            <GradientStop Color="#FF727272" Offset="1"/>-->
+                            <GradientStop Color="#FFFDFCFF" Offset="0"/>
+                            <GradientStop Color="#FFC7C7C7" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                </Path>
+                <Path Data="M23.422825,14.697595 C23.422825,17.065298 21.046094,18.99318 18.125216,18.99318 L5.2976096,18.99318 C2.3757708,18.99318 -1.7763565E-15,17.065999 -1.7763565E-15,14.697595 L-1.7763565E-15,4.2963638 C-1.7763565E-15,1.9278815 2.3767311,-3.3087225E-24 5.2976096,-3.3087225E-24 L18.124159,-3.3087225E-24 C21.045998,-3.3087225E-24 23.421769,1.9279594 23.421769,4.2963638 L23.422825,14.697595 23.422825,14.697595 z" Stretch="Fill" Margin="2.79,2.261,2.787,15.996" StrokeThickness="0.5" ClipToBounds="True">
+                    <Path.Stroke>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF464545" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Path.Stroke>
+                    <Path.Fill>
+                        <ImageBrush  x:Name="PART_COUNTRY_FLAG_IMAGE"  ImageSource="{Binding FlagImage, RelativeSource={RelativeSource TemplatedParent}}" Stretch="UniformToFill"/>
+                    </Path.Fill>
+                </Path>
+            </Grid>
+        </Viewbox>
+        
+    </ControlTemplate>
+    <Style  TargetType="{x:Type local:FlagIconPin}">
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="Template" Value="{StaticResource CountryFlags.Templates.CountryFlagFancyPin}" />
+    </Style>
+
+
+    <!-- SIMPLE PIN ICON-->
+    <ControlTemplate x:Key="CountryFlags.Templates.CountryFlagPin" TargetType="{x:Type local:FlagIconPin2}">
+        <Viewbox x:Name="PART_ICON_PANEL" >
+            <Grid>
+                <Path Data="M48.529427,121.96514 C47.646681,124.08794 45.410021,125.48993 42.910616,125.49997 40.40844,125.50724 38.158199,124.11981 37.259378,122.00929 25.055032,93.326941 0.5,56.474756 0.5,38.972703 0.49972284,17.761697 19.560387,0.5 43.002632,0.5 66.433791,0.5 85.499999,17.761697 85.499999,38.972703 85.502493,56.526189 60.584662,92.973934 48.529427,121.96514 z" Stretch="Fill">
+                    <Path.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFFDFCFF" Offset="0"/>
+                            <GradientStop Color="#FFC7C7C7" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                </Path>
+                <Path Data="M33.831219,0.5 C15.450144,0.5 0.5,14.033426 0.5,30.665381 0.5,47.307122 15.450144,60.847823 33.831219,60.847823 52.20675,60.847823 67.156894,47.311889 67.156894,30.665381 67.154123,14.033426 52.20675,0.5 33.831219,0.5 z" Stretch="Fill" Margin="9.171,7.317,9.172,57.335">
+                    <Path.Stroke>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF464545" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Path.Stroke>
+                    <Path.Fill>
+                        <ImageBrush x:Name="PART_COUNTRY_FLAG_IMAGE"  ImageSource="{Binding FlagImage, RelativeSource={RelativeSource TemplatedParent}}" Stretch="UniformToFill"/>
+                    </Path.Fill>
+                </Path>
+            </Grid>
+        </Viewbox>
+    </ControlTemplate>
+
+    <Style TargetType="{x:Type local:FlagIconPin2}">
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="Template" Value="{StaticResource CountryFlags.Templates.CountryFlagPin}" />
+    </Style>
+
 </ResourceDictionary>

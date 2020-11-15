@@ -9,5 +9,5 @@
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type local:FlagIcon}" BasedOn="{StaticResource CountryFlags.Styles.CountryFlag}" />
-    
+    <Style TargetType="{x:Type local:FlagIconCircle}" BasedOn="{StaticResource CountryFlags.Styles.CountryFlagCircle}" />
 </ResourceDictionary>

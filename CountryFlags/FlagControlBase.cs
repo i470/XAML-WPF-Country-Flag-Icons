@@ -71,16 +71,22 @@ namespace CountryFlags
             var baseUri = $"pack://application:,,,/CountryFlags;component/img/{path}";
             var imgUri = new Uri(baseUri, UriKind.Absolute);
 
+            
+
+
             var bitmap = new BitmapImage();
             bitmap.BeginInit();
             bitmap.UriSource = imgUri;
-            bitmap.DecodePixelWidth = (Int16)Size;
-            bitmap.CacheOption = BitmapCacheOption.OnLoad;
+           
+           bitmap.DecodePixelWidth = (Int16)Size*2;
+           bitmap.CacheOption = BitmapCacheOption.None;
+         
             bitmap.EndInit();
-            bitmap.Freeze();
+           
 
             var w = bitmap.PixelWidth;
             var h = bitmap.PixelHeight;
+
 
             var ImageDrawing = new ImageDrawing
             {
@@ -125,8 +131,8 @@ public enum IconSize
     s16 = 16,
     s24=24,
     s32=32,
+    s48 = 48,
     s64=64,
     s128=128,
-    s256=256,
-    s512=512
+    s256=256
 }

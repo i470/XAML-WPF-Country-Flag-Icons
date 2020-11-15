@@ -9,7 +9,6 @@
   <ItemGroup>
     <None Remove="afghanistan-flag-country-nation-union-empire-32928.svg" />
     <None Remove="aland-islands-flag-country-nation-union-empire-32908.svg" />
-    <None Remove="bhutan-flag-country-nation-union-empire-32931.svg" />
     <None Remove="flag-of-United-States-of-America.ico" />
   </ItemGroup>
 
@@ -27,9 +26,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="aland-islands-flag-country-nation-union-empire-32908.svg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="bhutan-flag-country-nation-union-empire-32931.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="flag-of-United-States-of-America.ico" />

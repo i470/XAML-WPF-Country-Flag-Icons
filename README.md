@@ -9,6 +9,8 @@ Country list populated in **CountryEnum.cs**
 
 ![Image of WPF XAML Flag Icons](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf_country_icons.PNG)
 
+![Image of WPF XAML Flag Icons with Pin , Square, Round, Circle Shapes](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf-xaml-world-country-flag-icons-square-rounded-rectangle-pin-fancy-pin.png)
+
 ## USAGE
 WPF Flag icons and images located in **CountryFlags** Project.
 

@@ -38,7 +38,8 @@ Sample usage is in **CountryFlagsPreview**
 ![Image of WPF XAML Flag Icons](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf-xaml-world-country-flags-sizes.png)
 
 - [ ] replace png images with svg
-- [ ] add rounded corner style
-- [ ] add square style
-- [ ] add round style
+- [x] add rounded corner style
+- [x] add square style
+- [x] add round style
 - [ ] add Label Card (flag - text)
+- [ ] render image for non centered flags diffrently, so that they look nice in square or circle shape

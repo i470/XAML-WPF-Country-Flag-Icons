@@ -30,6 +30,13 @@ Sample usage is in **CountryFlagsPreview**
 <cf:FlagIcon Country="Andorra"  />
 <cf:FlagIcon Country="Angola"  />
 
+
+<cf:FlagIconCircle Country="Argentina" Size="s64"  Shape="RoundedSquare" />
+<cf:FlagIconCircle Country="United_Kingdom" Size="s128" Shape="RoundedRect"  />
+
+<cf:FlagIconPin Country="France" Size="s128" />
+<cf:FlagIconPin2 Country="Canada" Size="s48" />
+
 <!-- Default icon size is set to 16px , can be changed by setting property Size="s32" -->
 
 <!-- Sizes : s16,s24,s32,s64,s128,s256,s512 -->

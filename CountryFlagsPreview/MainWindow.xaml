@@ -56,6 +56,7 @@
                         <DropShadowEffect BlurRadius="3" ShadowDepth="1"/>
                     </WrapPanel.Effect>
                     
+                    <!-- ROUND ICONS -->            
                     
                     <StackPanel Orientation="Vertical">
                         <cf:FlagIconCircle Country="Germany" Size="s128" Shape="Circle"  />
@@ -86,7 +87,7 @@
                         <cf:FlagIconCircle Country="Germany" Size="s16" Shape="Circle"   />
                         <TextBlock Text="16" FontSize="10" HorizontalAlignment="Center"  />
                     </StackPanel>
-
+<!-- ROUNDED SQUARE ICONS -->
                     <StackPanel Orientation="Vertical">
                         <cf:FlagIconCircle Country="Argentina" Size="s128" Shape="RoundedSquare"  />
                         <TextBlock Text="128" FontSize="10" HorizontalAlignment="Center"  />
@@ -118,7 +119,7 @@
                     </StackPanel>
                     
 
-
+<!-- ROUNDED RECTANGLE -->
 
                     <StackPanel Orientation="Vertical">
                         <cf:FlagIconCircle Country="United_Kingdom" Size="s128" Shape="RoundedRect"  />

@@ -50,3 +50,6 @@ Sample usage is in **CountryFlagsPreview**
 - [x] add round style
 - [ ] add Label Card (flag - text)
 - [ ] render image for non centered flags diffrently, so that they look nice in square or circle shape
+- [ ] refactor and fix naming
+- [ ] test performance
+- [ ] unit test

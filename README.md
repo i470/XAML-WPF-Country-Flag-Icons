@@ -1,5 +1,7 @@
 # WPF XAML Country Flag Icons 197 Flags
-Projects has 197 Country Flag Icons 
+Project has 197 Country Flag Icons 
+
+![Image of WPF XAML Flag Icons with Pin , Square, Round, Circle Shapes](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf-xaml-world-country-flag-icons-square-rounded-rectangle-pin-fancy-pin.png)
 
 WPF .NET Core 3.1
 Flag icons are generated from PNG Images size **204 x 120**,
@@ -9,7 +11,6 @@ Country list populated in **CountryEnum.cs**
 
 ![Image of WPF XAML Flag Icons](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf_country_icons.PNG)
 
-![Image of WPF XAML Flag Icons with Pin , Square, Round, Circle Shapes](https://github.com/i470/WPF-Country-Flag-Icons/blob/master/wpf-xaml-world-country-flag-icons-square-rounded-rectangle-pin-fancy-pin.png)
 
 ## USAGE
 WPF Flag icons and images located in **CountryFlags** Project.
